@@ -1,0 +1,56 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>vine archive</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="topbar">
+    <div class="topbar-inner">
+      <div class="brand">Vine</div>
+      <a class="back-link" href="/">&larr; nohlson.me</a>
+    </div>
+  </header>
+
+  <main id="app">
+    <section class="profile">
+      <img id="avatar" class="avatar" src="" alt="avatar">
+      <div class="profile-info">
+        <h1 id="username"></h1>
+        <p id="userdesc"></p>
+        <div class="stats">
+          <div><strong id="postCount"></strong><span>posts</span></div>
+          <div><strong id="followerCount"></strong><span>followers</span></div>
+          <div><strong id="followingCount"></strong><span>following</span></div>
+          <div><strong id="loopCount"></strong><span>loops</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="grid" id="grid"></section>
+  </main>
+
+  <div id="lightbox" class="lightbox hidden">
+    <div class="lightbox-inner">
+      <button id="closeBtn" class="close-btn">&times;</button>
+      <video id="lightboxVideo" loop playsinline></video>
+      <div class="lightbox-meta">
+        <p id="lbDescription"></p>
+        <div class="lb-stats">
+          <span id="lbLikes"></span>
+          <span id="lbComments"></span>
+          <span id="lbReposts"></span>
+          <span id="lbLoops"></span>
+        </div>
+        <div id="lbDate" class="lb-date"></div>
+      </div>
+      <button id="prevBtn" class="nav-btn nav-prev">&#8249;</button>
+      <button id="nextBtn" class="nav-btn nav-next">&#8250;</button>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
